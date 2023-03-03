@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({button, filter}) => {
   return (
-    <div>Button</div>
+    <div>
+      {
+        button.map((cat, i) => {
+          return <button type='button' onClick={()=>filter(cat)}>{cat}</button>
+        })
+      }
+    </div>
   )
 }
 
-export default Button
+export default Button;
