@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  background-color: #037FFF;
+  font-size: 1.2rem;
+}
+
+.App{
+  padding: 0 10rem;
+}
+h1{
+  font-size: 3rem;
+}
+span{
+  color: #0C3564;
+}
+.title{
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 200;
+  margin: 1rem 0;
+}
+
+h2:hover{
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  color: #037FFF;
+}
+
+.item{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding-bottom: 6rem;
+}
+
+.item-container{
+  overflow: hidden;
+}
+
+.item-con{
+  width: 100%;
+  padding: 6px;
+  background-color: #0C3564;
+  border-radius: 10px;
+}
+
+.item-container > img{
+  width: 100%;
+  transition: all .2s ease-in-out;
+}
+
+.item-container > img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.buttons{
+  margin: 3rem auto;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.btn{
+  padding: 10px 40px;
+  background-color: #0a74dd;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  transition: .2s;
+}
+
+.btn:hover{
+  background-color: #0C3564;
+  border: none;
+  border-radius: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+

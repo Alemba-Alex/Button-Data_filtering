@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import items from './Components/AllData';
+import items from './AllData';
 import Menu from './Components/Menu';
-import './index.css'
 import Button from './Components/Button';
 
 const allCategories = ['All', ...new Set(items.map(item => item.category))];
@@ -30,10 +29,12 @@ function App() {
        
        <div className="title">
          <h1>
-           Portfolio 
-           <span> Filter</span>
+            Filter 
+            <span>Button</span>
          </h1>
        </div>
+
+
       <Button button={buttons} filter={filter} />
        <Menu menuItem={menuItem}/>
 
